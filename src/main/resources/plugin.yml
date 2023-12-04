@@ -1,0 +1,26 @@
+name: VoidAddons
+version: '${project.version}'
+main: me.nygosaki.voidaddons.VoidAddons
+api-version: '1.20'
+depend: [Essentials, PlaceholderAPI, ClansLite]
+author: Nygosaki
+description: A set of addons by Nygosaki made for the VoidSMP.
+commands:
+  VanishCounter:
+    description: General info about the VanishCounter add-on.
+  trophies:
+    description: See all the trophies the clans have collected!
+    usage: "Usage: /trophies"
+    aliases: [clantrophies]
+  trophyclaim:
+    description: Claim a trophy for your clan!
+    usage: "Usage: /trophyclaim while holding a trophy item in your main hand"
+    aliases: [claimtrophy, redeemtrophy, trophyredeem]
+  trophymanage:
+    description: Admin commands for adding and deleting trophy items.
+    usage: "Usage: /trophymanage [create|remove] <trophy name>"
+    permission: voidaddons.trophy.manage
+permissions:
+  voidaddons.trophy.manage:
+    description: Allows players to manage trophies
+    default: op
